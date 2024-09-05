@@ -1,6 +1,11 @@
-import "./globals.css";
-import NavBar from "../components/nav-bar";
+import './globals.css';
+import NavBar from '../components/nav-bar';
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+
+export const metadata = {
+  title: 'My Cool App',
+  description: 'An amazing app with cool features',
+};
 
 export default function RootLayout({ children }) {
   return (
